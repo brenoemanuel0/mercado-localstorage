@@ -1,0 +1,28 @@
+:root {
+    --primaria: #374151;
+    --primaria-escura: #1f2937;
+    --destaque: #e5e7eb;
+    --borda: #e5e7eb;
+    --fundo-suave: #f3f4f6;
+}
+
+body { background: #f5f5f4; color: #1f2937; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-header { background: linear-gradient(110deg, var(--primaria-escura), var(--primaria)); box-shadow: 0 4px 18px #11182717; }
+.brand-mark { display: inline-grid; place-items: center; width: 36px; height: 36px; margin-right: 7px; border-radius: 11px; background: var(--destaque); color: var(--primaria-escura); }
+.eyebrow { color: var(--primaria); font-size: .77rem; font-weight: 800; letter-spacing: .13em; }
+h1 { color: var(--primaria-escura); }
+.product-card { height: 100%; border: 1px solid var(--borda); border-radius: 18px; overflow: hidden; box-shadow: 0 7px 24px #1118270d; transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 13px 30px #1118271c; }
+.product-card .card-body { padding: 1.5rem; }
+.product-icon { display: grid; place-items: center; height: 112px; background: linear-gradient(135deg, #f3f4f6, #e5e7eb); color: var(--primaria); font-size: 2.4rem; font-weight: 800; }
+.category-badge { background: #eceef1; color: var(--primaria-escura); font-size: .75rem; font-weight: 700; }
+.product-price { color: var(--primaria-escura); font-size: 1.5rem; font-weight: 800; }
+.panel-card { border-radius: 18px; box-shadow: 0 7px 26px #1118270d; }
+.form-control { padding: .7rem .85rem; border-radius: 10px; }
+.form-control:focus { border-color: #6b7280; box-shadow: 0 0 0 .2rem #37415120; }
+.btn-brand { background: var(--primaria); color: white; font-weight: 600; border-radius: 10px; padding: .65rem 1.2rem; }
+.btn-brand:hover { background: var(--primaria-escura); color: white; }
+.table thead th { background: var(--fundo-suave); color: var(--primaria-escura); font-size: .82rem; text-transform: uppercase; padding: 1rem; }
+.table tbody td { padding: 1rem; }
+.empty-state { padding: 3rem 1rem; border: 2px dashed #d1d5db; border-radius: 18px; text-align: center; color: #6b7280; background: white; }
+@media (max-width: 576px) { .display-6 { font-size: 1.9rem; } .table tbody td, .table thead th { padding: .75rem; } }
